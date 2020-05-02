@@ -1,6 +1,6 @@
 {
   "name": "@salte-auth/okta",
-  "version": "1.0.0-rc.1",
+  "version": "3.0.0",
   "main": "dist/okta.min.js",
   "module": "dist/okta.min.mjs",
   "types": "dist/okta.d.ts",
