@@ -1,6 +1,7 @@
 {
   "name": "@salte-auth/okta",
   "version": "3.0.0",
+  "browser": "dist/okta.min.js",
   "main": "dist/okta.min.js",
   "module": "dist/okta.min.mjs",
   "types": "dist/okta.d.ts",
