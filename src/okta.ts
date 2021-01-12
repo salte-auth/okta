@@ -5,15 +5,15 @@ export class Okta extends OpenIDProvider {
     super(config);
   }
 
-  public get name() {
+  public get name(): string {
     return 'okta';
   }
 
-  public get login() {
+  public get login(): string {
     return this.url(`${this.config.url}/oauth2/v1/authorize`);
   }
 
-  public get logout() {
+  public get logout(): string {
     return this.url(`${this.config.url}/oauth2/v1/logout`, {
       id_token_hint: this.idToken.raw,
       post_logout_redirect_uri: this.redirectUrl('logout')
