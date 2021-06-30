@@ -1,4 +1,3 @@
-import sinon from 'sinon';
 import chai from 'chai';
 import chaiString from 'chai-string';
 
@@ -49,9 +48,9 @@ describe('Okta', () => {
         responseType: 'id_token'
       });
 
-      sinon.stub(okta, 'idToken').get(() => ({
+      okta.idToken = {
         raw: '54321'
-      }));
+      };
 
       const url = new URL(okta.logout);
 
